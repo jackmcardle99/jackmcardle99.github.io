@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diet Plan Progression</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  
+  <label for="dropdown">Select plan</label>
+  <select id="ddl">
+      <option value="bulking">Bulking</option>
+      <option value="shredding">Shredding</option>
+  </select>
+
+
+  <input type="number" id="inputNumber" placeholder="Enter a number" oninput="handleDropdown()">
+  <br><br>
+  <div>
+    <table id="table" class="myTable">
+      <tr>
+        <th>Week</th>
+        <th>Multiplier</th>
+        <th>Kcal</th> 
+        <th>Carbs</th>
+        <th>Fat</th>
+      </tr>
+    </table>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
