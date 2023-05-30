@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet Plan Progression</title>
+  <link href="output.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="bg-[#0171bc]">
+    <div class="container flex items-center justify-center p-6 mx-auto text-gray-600 capitalize dark:text-gray-300">
+        <a href="https://www.morgan-fitnessni.co.uk/">
+          <img href="./images/logo.png" src="../images/logo.png">
+        </a>
+    </div>
+</nav>
+  
+
+<div class="max-w-7xl mx-auto px-6 lg:px-8">
+  
+  <div class="mt-10 mx-auto inline-flex space-x-5">
+    <select class="bg-slate-100 rounded-full scale-80 md:scale-100" id="ddl">
+      <option value="default">Select plan</option>  
+      <option value="bulking">Bulking</option>
+      <option value="shredding">Shredding</option>
+    </select>
+  
+    <input class="bg-slate-100 rounded-full scale-80 md:scale-100" type="number" id="inputNumber" placeholder="Enter weight (KG)" oninput="handleDropdown()">
+  </div>
+  
+  <p class="mt-5 mb-5" id="protein"></p>
+
+  <div class="relative overflow-x-auto">
+    <table id="table" class="w-full text-sm text-left text-gray-500">
+        <thead class="text-xs text-gray-700 uppercase">
+            <tr class="bg-white border-b">
+                <th scope="col" class="px-6 py-3">
+                    Week
+                </th>
+                <!-- <th scope="col" class="px-6 py-3">
+                    Multiplier
+                </th> -->
+                <th scope="col" class="px-6 py-3">
+                    Calories
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Carbs
+                </th>
+                <th scope="col" class="px-6 py-3">
+                  Fat
+              </th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr></tr>
+        </tbody>
+    </table>
+  </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
