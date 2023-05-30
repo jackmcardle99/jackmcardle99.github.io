@@ -41,27 +41,23 @@ function updateTableBulking(){
         row.classList.add("border-b");
         row.classList.add("text-black");
         var cell1 = row.insertCell(0);
-        // var cell2 = row.insertCell(1);
         var cell2 = row.insertCell(1);
         var cell3 = row.insertCell(2);
         var cell4 = row.insertCell(3);
         
         cell1.innerHTML = (i);
-        // cell2.innerHTML = "x" + multiplier;
         cell2.innerHTML = Math.round(calories) + " kcal";
         cell3.innerHTML = Math.round(carbInGrams) + "g";
         cell4.innerHTML = Math.round(fatInGrams) + "g";
 
-        cell1.classList.add("px-6")
-        cell1.classList.add("py-4")
-        // cell2.classList.add("px-6")
-        // cell2.classList.add("py-4")
-        cell2.classList.add("px-6")
-        cell2.classList.add("py-4")
-        cell3.classList.add("px-6")
-        cell3.classList.add("py-4")
-        cell4.classList.add("px-6")
-        cell4.classList.add("py-4")
+        cell1.classList.add("px-6");
+        cell1.classList.add("py-4");
+        cell2.classList.add("px-6");
+        cell2.classList.add("py-4");
+        cell3.classList.add("px-6");
+        cell3.classList.add("py-4");
+        cell4.classList.add("px-6");
+        cell4.classList.add("py-4");
         multiplier = multiplier + 2;
         if(multiplier==32) multiplier=22;
     }
@@ -89,6 +85,9 @@ function updateTableShredding(){
         var fatInGrams = (energyInCalories / 9);
         
         var row = table.insertRow(i);
+        row.classList.add("bg-white");
+        row.classList.add("border-b");
+        row.classList.add("text-black");
         var cell1 = row.insertCell(0);
         // var cell2 = row.insertCell(1);
         var cell2 = row.insertCell(1);
@@ -101,6 +100,14 @@ function updateTableShredding(){
         cell3.innerHTML = Math.round(carbInGrams) + "g";
         cell4.innerHTML = Math.round(fatInGrams) + "g";
 
+        cell1.classList.add("px-6");
+        cell1.classList.add("py-4");
+        cell2.classList.add("px-6");
+        cell2.classList.add("py-4");
+        cell3.classList.add("px-6");
+        cell3.classList.add("py-4");
+        cell4.classList.add("px-6");
+        cell4.classList.add("py-4");
 
         multiplier = multiplier - 2;
         if(i==11){
