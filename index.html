@@ -18,20 +18,21 @@
 <div class="max-w-7xl mx-auto px-6 lg:px-8">
   
   <div class="mt-10 mx-auto inline-flex space-x-5">
-    <select class="bg-slate-100 rounded-full scale-75 md:scale-100" id="ddl">
+    <select class="bg-slate-100 rounded-full scale-80 md:scale-100" id="ddl">
       <option value="default">Select plan</option>  
       <option value="bulking">Bulking</option>
       <option value="shredding">Shredding</option>
       <option value="shredding-oversize">Shred (30%+ Bodyfat)</option>
     </select>
-  
-    <input class="bg-slate-100 rounded-full scale-75 md:scale-100" type="number" id="inputNumber" placeholder="Enter weight (KG)" oninput="handleDropdown()">
   </div>
-  
+  <br>
+  <div class="mt-5 mx-auto inline-flex space-x-5">
+    <input class="bg-slate-100 rounded-full scale-80 md:scale-100" type="number" id="inputNumber" placeholder="Enter weight (KG)" oninput="handleDropdown()">
+  </div>
   <p class="mt-5 mb-5" id="protein"></p>
 
   <div class="relative overflow-x-auto">
-    <table id="table" class="w-full text-sm text-left text-gray-500">
+    <table id="table" class="w-full text-sm text-left text-gray-500 md:scale-100 scale-80">
         <thead class="text-xs text-gray-700 uppercase">
             <tr class="bg-white border-b">
                 <th scope="col" class="px-6 py-3">

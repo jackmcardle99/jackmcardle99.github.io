@@ -165,6 +165,12 @@ function updateTableShreddingOversize(){
         cell2.innerHTML = Math.round(caloriesFinal) + " kcal";
         cell3.innerHTML = Math.round(carbInGrams) + "g";
         cell4.innerHTML = Math.round(fatInGrams) + "g";
+        if(inputKG == 0){
+            cell1.innerHTML = (i);
+            cell2.innerHTML = 0;
+            cell3.innerHTML = 0;
+            cell4.innerHTML = 0;
+        }
 
         cell1.classList.add("px-6");
         cell1.classList.add("py-4");
